@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../assets//fonts/Poppins-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-style: italic;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/Poppins-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  padding: 100px 100px;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  height: 50%;
+  width: 60%;
+  padding-left: auto;
+  padding-right: auto;
+  padding: 40px;
+  border-radius: 15px;
+  border-bottom-right-radius: 25%;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container form .inputs {
+  display: flex;
+  gap: 20px;
+  margin-right: 20%;
+}
+.container form .inputs .single-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container form .inputs .single-input label {
+  font-family: "poppins";
+  color: hsl(0, 1%, 44%);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.container form .inputs .single-input input {
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px 20px;
+  caret-color: hsl(259, 100%, 65%);
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container form .inputs .single-input input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.container form .inputs .single-input input input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+.container form .inputs .single-input input::-webkit-outer-spin-button, .container form .inputs .single-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container form .inputs .single-input input input[type=number] {
+  -moz-appearance: textfield;
+}
+.container form .inputs .single-input input .error {
+  border-color: hsl(0, 100%, 67%);
+}
+.container form .inputs .single-input span {
+  font-family: "poppins";
+  font-style: italic;
+  font-size: x-small;
+  color: hsl(0, 100%, 67%);
+}
+.container form .submit {
+  align-items: center;
+  display: flex;
+}
+.container form .submit .line-container {
+  width: 100%;
+}
+.container form .submit .line {
+  width: 30px;
+  display: block;
+  width: 100%;
+  border: 0.5px solid hsl(0, 0%, 86%);
+  border-top: none;
+}
+.container form .submit .btn-submit {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+}
+.container .display {
+  font-family: poppins;
+  font-size: 4em;
+  font-weight: 800;
+  font-style: italic;
+  color: hsl(0, 0%, 8%);
+}
+.container .display p {
+  display: inline;
+}
+.container .display .value {
+  color: hsl(259, 100%, 65%);
+}
+.container .invalid {
+  border-color: hsl(0, 100%, 67%);
+}
+
+/*# sourceMappingURL=index.css.map */
