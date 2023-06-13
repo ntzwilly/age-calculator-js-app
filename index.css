@@ -35,6 +35,11 @@ body {
   padding: 100px 100px;
 }
 
+.invalid-input {
+  border-color: hsl(0, 100%, 67%);
+  color: red;
+}
+
 .container {
   background-color: hsl(0, 0%, 100%);
   height: 50%;
@@ -81,9 +86,9 @@ body {
 .container form .inputs .single-input input:focus {
   border: 1px solid hsl(259, 100%, 65%);
 }
-.container form .inputs .single-input input input:invalid {
-  border-color: #900;
-  background-color: #fdd;
+.container form .inputs .single-input input:focus:invalid {
+  outline: none;
+  border-color: hsl(0, 0%, 86%);
 }
 .container form .inputs .single-input input::-webkit-outer-spin-button, .container form .inputs .single-input input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -91,9 +96,6 @@ body {
 }
 .container form .inputs .single-input input input[type=number] {
   -moz-appearance: textfield;
-}
-.container form .inputs .single-input input .error {
-  border-color: hsl(0, 100%, 67%);
 }
 .container form .inputs .single-input span {
   font-family: "poppins";

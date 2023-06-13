@@ -48,6 +48,11 @@ body {
   padding: 100px 100px
 }
 
+.invalid-input {
+  border-color: $color-light-red;
+  color: red;
+}
+
 .container {
   background-color: $color-white;
   height: 50%;
@@ -96,9 +101,13 @@ body {
             border: 1px solid $color-primary-purple;
           }
 
-          input:invalid {
-            border-color: #900;
-            background-color: #fdd;
+          // &:invalid {
+          //   border-color: $color-light-red;
+          // }
+
+          &:focus:invalid {
+            outline: none;
+            border-color: $color-light-grey;
           }
 
           &::-webkit-outer-spin-button,
@@ -109,10 +118,6 @@ body {
 
           input[type=number] {
             -moz-appearance: textfield;
-          }
-
-          .error {
-            border-color: $color-light-red;
           }
         }
         
